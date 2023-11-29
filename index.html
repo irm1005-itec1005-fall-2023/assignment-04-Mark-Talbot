@@ -3,7 +3,7 @@
 
 <head>
   <!-- Set the page title -->
-  <title>To-do list app</title>
+  <title>Cosmic Checklist</title>
 
   <!-- Set the charset we're using to UTF-8 -->
   <meta charset="utf-8" />
@@ -26,55 +26,56 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="todo-app">
-      <h2>To-Do List <img src="./checkbox.png" alt="checkbox image"></h2>
-      <div class="row">
-        <input type="text" 
-          id="input-box"
-          placeholder="Enter To-Do">
-  <button onclick="addTask"()> Add  </button>
-</div>
-<ul id="list-container">
-  <!-- <li class="checked">Task 1</li>
-  <li>Task 2</li>
-  <li>Task 3</li> -->
-  
-</ul>
-
-
-    </div>
-
-  </div>
 
   <main>
 
-   <section class="form">
+    <div class="container">
+      
+      <div class="Background-box">
 
-    <h1>To-Do List</h1>
+      <h1> Cosmic Checklist</h1>
 
-    <form id="form-1">
+      <div class="main-box">
 
-    
-        <label for="To-do-input-1">To-Do item names</label>
-        <input
-          type="text"
-          name="To-do-input-1"
-          id="To-do-input-1"
-          placeholder="Enter task"
-          required
-        />
+      
 
-        <button class="btn-completed"
-        type="submit"> Submit Name</button>
-      </form>
-  
-      <ul class="poke-items"
-        id="To-do-list-1">
-      </ul>
+      <section class = "form-A">
 
-      <p> To-do's remaining</p>
+        <div class="title-image">
+        <h2> To-do list</h2>
+        <img src="./checkbox.png" alt="Checklist image">
+        </div>
 
+        <div class="text-box-submit">
+        <form id="to-do-form">
+
+          <label for="name-input-1"> Enter a Task</label>
+          <input type="text" id="name-input-1" name="name-input-1" required placeholder="Study for exams" />
+
+          <button class="btn-primary" type="submit"> Submit name</button>
+
+        </form>
+      </div>
+
+        <section>
+          <h3> The To-do items in the app</h3>
+
+          <ul class="form-results" id="to-do-name-list">
+          
+          </ul>
+
+          <p id="to-do-count"></p>
+        </div>
+
+        </section>
+      </section>
+    </div>
+     
+    </div>
+
+  </main>
+
+</body>
     </section>
     </main>
 
