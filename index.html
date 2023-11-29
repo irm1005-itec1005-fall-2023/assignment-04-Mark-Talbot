@@ -3,7 +3,7 @@
 
 <head>
   <!-- Set the page title -->
-  <title>Assignment 04 - Finishing a Todo List App</title>
+  <title>To-do list app</title>
 
   <!-- Set the charset we're using to UTF-8 -->
   <meta charset="utf-8" />
@@ -17,35 +17,69 @@
   <!-- Set the CSS Reset File -->
   <link rel="stylesheet" href="./reset.css" />
 
-  <!-- Set the main stylesheet -->
-  <link rel="stylesheet" href="./style.css" />
+   <!-- This is where all of our awesome CSS code goes -->
+   <link rel="stylesheet" href="style.css" />
 
-  <!-- Set the Favicon  -->
-  <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+   <!-- Set the Favicon  -->
+   <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+
 </head>
+
 <body>
+  <div class="container">
+    <div class="todo-app">
+      <h2>To-Do List <img src="./checkbox.png" alt="checkbox image"></h2>
+      <div class="row">
+        <input type="text" 
+          id="input-box"
+          placeholder="Enter To-Do">
+  <button onclick="addTask"()> Add  </button>
+</div>
+<ul id="list-container">
+  <!-- <li class="checked">Task 1</li>
+  <li>Task 2</li>
+  <li>Task 3</li> -->
+  
+</ul>
 
-  <!--
 
-    Assignment 04 - Finishing a Todo List App
+    </div>
 
-    Instructions:
-
-    Important checklist:
-
-    - Are users able to create and delete to do list items?
-    - Have you set a favicon? (included - but it's a rocket)
-    - Has a team member conducted a code review and left a GitHub Issue in your repo?
-    - Have you conducted a code review and left a GitHub Issue on your team member's repo?
-
-  -->
+  </div>
 
   <main>
-    <div id="app"></div>
-  </main>
 
-  <!-- Add JavaScript File -->
+   <section class="form">
+
+    <h1>To-Do List</h1>
+
+    <form id="form-1">
+
+    
+        <label for="To-do-input-1">To-Do item names</label>
+        <input
+          type="text"
+          name="To-do-input-1"
+          id="To-do-input-1"
+          placeholder="Enter task"
+          required
+        />
+
+        <button class="btn-completed"
+        type="submit"> Submit Name</button>
+      </form>
+  
+      <ul class="poke-items"
+        id="To-do-list-1">
+      </ul>
+
+      <p> To-do's remaining</p>
+
+    </section>
+    </main>
+
   <script src="./script.js"></script>
 
 </body>
+
 </html>
