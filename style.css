@@ -1,56 +1,145 @@
-/*
- * CSS File for the solution
- * Assignment 03
- * You can modify these styles but you don't have to
- */
 
-/*
- VARIABLES
-*/
-:root {
-  /* Core colours */
-  /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
-  --colour-amaranth: #e63946;
-  --colour-peppermint: #f1faee;
-  --colour-aquaisland: #a8dadc;
-  --colour-wedgewood: #457b9d;
-  --colour-cello: #1d3557;
+/* Background image found from
+ https://osxdaily.com/2010/03/30/awesome-galaxy-wallpaper/ */
 
-  /* Header configuration */
-  --header-heading-colour: var(--colour-peppermint);
-
-  /* Body configuration */
-  --body-default-colour: var(--colour-cello);
-  --body-background-colour: var(--colour-peppermint);
+{
+margin: 0;
+padding: 0;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+box-sizing: border-box;
 }
 
-/*
-  PAGE / BODY
-*/
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
-}
 
-main {
+.container {
+  width: 100%;
   min-height: 100vh;
+  background-image: url(Galaxy.jpg);
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.Form A{
+  width: 100%;
+  max-width: 550px;
+  background-color: aliceblue;
+  margin: 100px auto 30px;
+  padding: 40px 30px 70px;
+  border-radius: 20px;
+}
 
+.title-image{
   display: flex;
+  justify-content: space-around;
+  color:  #40066c;
+  background-color: aliceblue;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding-top: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.Background-box{
+  background-color: #7993ea;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  border-radius: 20px;
+}
+
+.main-box {
+  background-image: url(Galaxy.jpg);
+  border-radius: 20px;
   justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+}
+
+.main-box ul{
+  text-decoration: none;
+}
+
+
+img{
+  width: 30px;
+  color: aliceblue;
+  
+}
+
+.text-box-submit{
+  background-color: aliceblue; 
+  border-radius: 0px;
+
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  text-align: center;
+  font-size: larger;
+}
+
+.btn-primary{
+  background-color:#7993ea;
+  color: aliceblue;
+  border-radius: 10px;
+}
+
+h3{
+  text-align: center;
+
+  padding: 2rem;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  background-color: #40066c;
+  color: aliceblue;
+  
+}
+
+button{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+h1{
+  text-align: center;
+}
+
+.form-results{
+  margin-top: 2rem;
+  background-color:#40066c ;
+  border-radius: 20px;
+  padding: 1rem;
+  
+}
+
+li{
+  background-color: aliceblue;
+  margin: 2rem;
+  border: 2px;
+  border-color: #7993ea;
+  list-style-type: none;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
   align-items: center;
 }
 
+.delete-btn{
+  justify-content: space-evenly;
+  color: aliceblue;
+  background-color: #ae0505;
+  margin-bottom: 1rem;
+  align-items: center;
+}
 
-/****** Screen reader text utility clsas *******/
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+.done {
+  text-decoration: line-through; /* Add line-through to the text */
+  opacity: 0.5; /* Reduce opacity to indicate it's done */
 }
